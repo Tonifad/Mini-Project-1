@@ -1,0 +1,108 @@
+/*General page style*/
+body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    background-color:#f4f4f4;
+    color:#333;
+
+}
+
+/*header*/
+header{
+    background-color:blueviolet;
+    color:white;
+    text-align: center;
+    padding: 25px;
+
+}
+
+header h1{
+    margin-bottom: 5px;
+
+}
+
+/*actual content*/
+main{
+    padding:20px;
+
+}
+
+/*sections*/
+section{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border:1px solid #ddd;
+    border-radius: 8px;
+}
+
+/*dropdown filters*/
+label{
+    display: inline-block;
+    margin: 10px 5px;
+    font-weight: bold;
+
+}
+
+select,input{
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+
+}
+/* Course list and details layout */
+#course-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+#course-details {
+    white-space: pre-line;
+}
+
+#course-list-section {
+    flex: 1;
+}
+
+#course-details-section {
+    flex: 1;
+}
+
+/* Individual courses */
+#course-list {
+    list-style: none;
+    padding: 0;
+}
+
+#course-list li {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #edf2f7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#course-list li:hover {
+    background-color: #d6e4f0;
+}
+
+/* Error message */
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* for Smaller screens */
+@media (max-width: 700px) {
+    #course-container {
+        flex-direction: column;
+    }
+
+    #course-list-section,
+    #course-details-section {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

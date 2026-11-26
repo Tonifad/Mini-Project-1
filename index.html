@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Explorer</title>
+
+    <!-- CSS connection -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--JavaScript connection-->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Course Explorer</h1>
+        <p>Browse, filter and explore available courses.</p>
+    </header>
+
+    <main>
+
+        <!--FILE UPLOAD SECTION -->
+        <section id="upload-section">
+            <h2>Upload Courses</h2>
+            <input type="file" id="file-input" accept=".json">
+            <p id="error-message"></p>
+        </section>
+
+        <!--FILTER SECTION-->
+        <section id="filter-section">
+            <h2>Filter Courses</h2>
+
+            <label for="department-filter">Department:</label>
+            <select id="department-filter">
+                <option value="">All Departments</option>
+            </select>
+
+            <label for="year-filter">Year:</label>
+            <select id="year-filter">
+                <option value="">All Years</option>
+            </select>
+
+            <label for="semester-filter">Semester:</label>
+            <select id="semester-filter">
+                <option value="">All Semesters</option>
+            </select>
+
+            <label for="credits-filter">Credits:</label>
+            <select id="credits-filter">
+                <option value="">All Credits</option>
+            </select>
+        </section>
+
+        <!--SORT SECTION-->
+        <section id="sort-section">
+            <h2>Sort Courses</h2>
+
+            <select id="sort-filter">
+                <option value="">No Sorting</option>
+                <option value="title">Title</option>
+                <option value="id">Course ID</option>
+                <option value="semester">Semester</option>
+            </select>
+        </section>
+
+        <!--COURSE LIST AND DETAILS-->
+        <div id="course-container">
+
+            <section id="course-list-section">
+                <h2>Available Courses</h2>
+                <p id="course-count">No courses loaded.</p>
+                <ul id="course-list"></ul>
+            </section>
+
+            <section id="course-details-section">
+                <h2>Course Details</h2>
+                <div id="course-details">
+                    <p>Select a course to see its details.</p>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
